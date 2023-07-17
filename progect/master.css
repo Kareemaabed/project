@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#5333ed;
+    --bg-color:#0c022f;
+    --text-color:#fff;
+    --hover-color:#2900ed;
+}
+
+body{
+    font-family: 'open sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.contalner{
+    margin: 0 auto;
+    width: 1200px;
+}
+header .contalner{
+    margin-top: 25px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    width: 100px;
+    border-radius:7px; 
+    box-shadow: -1px 2px 10px 1px #1d1d36, -1px 2px 10px 1px #1d1d36;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    gap: 15px;
+    color: var(--text-color);
+    align-items: center;
+}
+header nav ul li{
+    font-weight: bold;
+    font-size: 18px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5;
+    -webkit-transition: 0.5;
+    -moz-transition: 0.5;
+    -ms-transition: 0.5;
+    -o-transition: 0.5;
+}
+header nav ul li a:hover{
+       color: var(--hover-color);
+}
+main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+main .info{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+main .info h1{
+    font-size: 50px;
+    margin: 0;
+}
+main .info h1,
+main .info p{
+    color: var(--text-color);
+}
+main .info p{
+    font-size: 20px;
+    line-height: 2;
+}
+main .info button{
+    background-color: var(--main-color);
+    border: none;
+    padding: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+main .info button:hover{
+    background-color: var(--hover-color);
+}
+    
+
